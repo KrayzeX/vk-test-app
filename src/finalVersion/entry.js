@@ -21,7 +21,7 @@ import Router from './router.js';
 (async () => {
   try {
     const header = document.querySelector('#header');
-    await Model.login( 7734691 , 2 | 8192 );
+    await Model.login( 'using your app id' , 2 | 8192 );
     const [me] = await Model.getUser({name_case: "gen" });
 
     header.innerHTML = View.render('header', me);
